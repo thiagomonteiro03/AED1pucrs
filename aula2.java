@@ -8,40 +8,26 @@ public class aula2 {
 		int [] res = new int[vet.length];
 		int cont = 0;
 
-		while(cont!=vet.length){
-
-		for(int i = 0; vet[i]%2==0;i++){
+		for(int i = 0; i<vet.length;i++){
+			if(vet[i]%2==0){
 				res[cont] = vet[i];
 				cont++;
+			} 
 		}
 
-		for(int i = 0; vet[i]%2>0;i++){
-			res[cont] = vet[i];
-			cont++;
+		for(int i = 0; i<vet.length;i++){
+			if(vet[i]%2>0){
+				res[cont] = vet[i];
+				cont++;
+			} 
 		}
-
-	}
-
-		// for(int i = 0; i<vet.length;i++){
-		// 	if(vet[i]%2>0){
-		// 		res[cont] = vet[i];
-		// 		cont++;
-		// 	} 
-		// }
-
-		// for(int i = 0; i<vet.length;i++){
-		// 	if(vet[i]%2==0){
-		// 		res[cont] = vet[i];
-		// 		cont++;
-		// 	} 
-		// }
 
 		for(int i = 0; i<vet.length;i++){
 			System.out.print(vet[i]+", ");
 		}
 		System.out.println("");
 		for(int i = 0; i<res.length;i++){
-			System.out.print(vet[i]+", ");
+			System.out.print(res[i]+", ");
 		}
 
 	}
